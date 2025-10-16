@@ -28,8 +28,7 @@ def total_salary(path):
     
 try:
     total, average = total_salary("text_task_1.txt")
-except FileNotFoundError:
-        # Handle the case where the file is not found
-        print("Error: The specified file was not found.")    
-else:       
     print(f"Загальна сума заробітної плати: {total}, Середня заробітна плата: {average}")
+except FileNotFoundError:
+    # Handle the case where the file is not found
+    print("Error: The specified file was not found.")    
